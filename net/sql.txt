@@ -1,0 +1,31 @@
+USE [Esunnet]
+GO
+
+/****** Object:  Table [dbo].[Evaluation]    Script Date: 2015/1/5 22:09:27 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[Evaluation](
+	[taskID] [varchar](100) NOT NULL,
+	[name] [varchar](100) NULL,
+	[dateTime] [datetime] NULL,
+	[department] [varchar](100) NULL,
+	[accidentAddress] [varchar](100) NULL,
+	[evaluationResult] [varchar](100) NULL,
+	[state] [int] NULL,
+	[lastUpdateTime] [datetime] NULL,
+	[context] [varchar](4000) NULL
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+

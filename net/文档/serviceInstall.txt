@@ -1,0 +1,24 @@
+﻿installutil FileMonitorService.exe
+
+installutil /u FileMonitorService.exe
+
+
+
+
+安装、卸载window服务
+
+1、输入cmd(命令行),输入cd C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319，2.0为cd C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727
+
+2、安装服务（项目生成的exe文件路径）
+
+  将InstallUtil.exe文件与WindowsService.exe，WindowsService.exe.config放在一个文件夹
+
+创建一个.bat文件： InstallUtil /i WindowsService.exe
+
+InstallUtil "E:\WindowsService1\bin\Debug\WindowsService1.exe"
+
+3、卸载服务
+
+  InstallUtil  /u "E:\WindowsService1\bin\Debug\WindowsService1.exe"
+
+
